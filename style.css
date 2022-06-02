@@ -1,6 +1,6 @@
 body {
 background: black;
-font-family: 'Comfortaa', sans-serif;
+font-family: 'dancing script', sans-serif;
 font-size: 15px;
 letter-spacing: 2px;
 }
@@ -23,7 +23,8 @@ box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
 }
 .Profile_name {
 text-align: center;
-padding: 30px;
+font-size: 15px;
+padding: 40px;
 color: #717c71;
 }
 .links {
@@ -31,7 +32,7 @@ color: white;
 text-align: center;
 font-family: 'Comfortaa', sans-serif;
 font-size: 12px;
-margin-top: 20px;
+margin-top: 15px;
 padding: 15px;
 border: 1px solid white;
 border-width: 1px;
@@ -42,12 +43,18 @@ margin-right: auto;
 border-radius: 50px;
 background: #000000;
 }
-a{
+a {
 text-decoration: none;
 }
-a:hover {
+.links:hover {
 color: black;
 background: #ffffff;
+ position:relative;
+    font-size:20px;
+    width:300px;
+    height:25px;
+    display:block;
+    z-index:999;
 }
 .icons w3-padding{
   gap: 10px;
@@ -60,3 +67,16 @@ background: #ffffff;
 
 .icons a svg {
   transform: scale(1);
+} 
+.thumbnail {
+  display:block;
+  margin-top:100px;
+  margin-left:auto;
+  margin-right:auto;
+  cursor: pointer;
+  transition: all ease-out .5s;
+}
+.thumbnail:hover {
+    transform: scale(1.1);
+    box-shadow: .8px .8px 10px rgba(255, 255, 255), -.8px -.8px 25px rgba(255, 255, 255)
+}
